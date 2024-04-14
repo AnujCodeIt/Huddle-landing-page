@@ -1,0 +1,162 @@
+:root {
+  /* Colors */
+  --violet: hsl(257, 40%, 49%);
+  --soft-megenta: hsl(300, 69%, 71%);
+
+  /* font-weights */
+  --font-medium: 400;
+  --font-large: 600;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: auto;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--violet);
+  background-image: url("./images/bg-desktop.svg");
+  background-repeat: no-repeat;
+}
+
+.header {
+  width: 144rem;
+  padding-left: 2rem;
+  margin: 3.2rem 0 3.6rem 0;
+
+  height: 7rem;
+}
+
+.header-logo {
+  display: block;
+}
+
+.container {
+  width: 144rem;
+
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+}
+
+.left {
+  padding: 2rem;
+}
+
+.app-img {
+  width: 100%;
+  display: block;
+}
+
+.right {
+  margin: 7.4rem 7rem 0rem 3.2rem;
+
+  position: relative;
+}
+
+.right-info {
+}
+
+.heading {
+  font-family: "Poppins";
+  font-size: 4.4rem;
+  line-height: 1.4;
+  color: #fff;
+  font-weight: var(--font-large);
+
+  margin-bottom: 2.4rem;
+}
+
+.right-text {
+  font-family: "Open Sans";
+  font-size: 1.8rem;
+  font-weight: var(--font-medium);
+
+  color: #e6e6e6;
+
+  margin-bottom: 2.4rem;
+}
+
+.btn:link,
+.btn:visited {
+  font-family: "Open Sans";
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: var(--violet);
+  font-weight: var(--font-medium);
+
+  display: inline-block;
+
+  padding: 1.5rem 6rem;
+  background-color: #fff;
+  border-radius: 100px;
+  text-align: center;
+  letter-spacing: 1px;
+
+  transition: all 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+  cursor: pointer;
+  color: #fff;
+  background-color: var(--soft-megenta);
+}
+
+.app-logo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.8rem;
+
+  justify-content: center;
+}
+
+.social-icons li {
+  list-style: none;
+}
+
+.media-icon {
+  display: block;
+  width: 2.4rem;
+  height: 2.4rem;
+
+  fill: #fff;
+
+  padding: 0.5rem;
+  border: 2px solid #fff;
+  border-radius: 50%;
+
+  transition: all 0.3s;
+}
+
+.media-icon:hover {
+  fill: var(--soft-megenta);
+  border: 2px solid hsl(300, 69%, 71%);
+}
+
+.special-color {
+  fill: var(--soft-megenta);
+  border: 2px solid hsl(300, 69%, 71%);
+}
+
+.special-color:hover {
+  fill: #fff;
+  border: 2px solid #fff;
+}
